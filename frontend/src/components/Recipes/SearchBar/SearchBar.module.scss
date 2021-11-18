@@ -1,0 +1,81 @@
+@import '../../Variables/Variables.scss';
+
+.nodata{
+  height: 55vh;
+  text-align: center;
+  margin-top:5%;
+}
+
+.searchInputs{
+  margin-top: 40px;
+  height:150px;
+  width: 100%;
+  background-image: url('../../../images/obst-gemuese.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+div.containerInputIcon {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.SearchRecipe{
+  width: 100%; 
+  
+  margin-top: 50px;
+  margin-bottom: 70px;
+  border-radius: $inputBtnRadius;
+  caret-color: $inputColor;
+  color: $inputColor;
+  box-shadow: $inputBoxShadow;
+  border: 5px transparent;
+  font-size: $inputfontSize;
+ 
+  padding: $inputPadding;
+
+  &:focus {
+    color: $inputColor;
+    border-color: $inputBorderColor;
+    box-shadow: $inputBoxShadowFocus;
+    transition: $inputTransition;
+   
+    border: none;
+  }
+
+  &::placeholder {
+    color: $inputPlaceholderColor;
+ }
+
+} 
+/* @media (max-width:500px){
+  div .SearchRecipe{
+    width:250px; 
+  
+  } 
+} */
+   .searchIcon,.closeIcon{
+   margin-top: -15px;
+    margin-left:-30px;
+}  
+div .cardTitle{
+  height:60px;
+} 
+.cardBody {
+  display: block;
+  height: calc(100% - 15px);
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  } 
+  .cardText{
+    height:120px;
+  }
+  .readMore{
+    margin-bottom:20px;
+  }
+
+

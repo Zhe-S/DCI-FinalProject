@@ -1,0 +1,367 @@
+
+  .frontendbox{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin: 120px 0 100px 0;
+
+  }
+  .box {
+   margin-bottom: 20px;
+   
+    perspective: 600px;
+  
+
+    position: relative;
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1.2s;
+    transform-origin: right center;
+    border:2px rgb(169, 169, 173) solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+  }
+  .box:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+ 
+  .box .front {
+    background-color: red;
+    background-image: url(./Imgs/sun.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.8;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden;
+    
+  }
+  .box .back {
+    background-color: rgb(84, 93, 84);
+    transform: rotateY(180deg);
+    
+    background-size: cover;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden;
+  }
+
+
+
+
+
+
+
+
+
+
+  .boxH {
+    margin-bottom: 20px;
+    
+     perspective: 600px;
+   
+ 
+     position: relative;
+     width: 400px;
+     height: 300px;
+     transform-style: preserve-3d;
+     transition: transform 1.2s;
+     transform-origin: right center;
+     border:2px rgb(169, 169, 173) solid;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     
+   }
+   .boxH:hover {
+     transform: translateX(-100%) rotateY(-180deg);
+   }
+  
+   .boxH .front {
+     background-color: red;
+     background-image: url(./Imgs/Hosam.jpg);
+     background-size: cover;
+     background-position: center;
+     cursor: pointer;
+     opacity: 0.8;
+     
+ 
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     font-size: 30px;
+     color: white;
+     backface-visibility: hidden;
+     
+   }
+   .boxH .back {
+    background-color: rgb(84, 93, 84);
+     transform: rotateY(180deg);
+     
+     background-size: cover;
+     
+ 
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     font-size: 30px;
+     color: white;
+     backface-visibility: hidden;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .boxT {
+    margin-bottom: 20px;
+    
+     perspective: 600px;
+   
+ 
+     position: relative;
+     width: 400px;
+     height: 300px;
+     transform-style: preserve-3d;
+     transition: transform 1.2s;
+     transform-origin: right center;
+     border:2px rgb(169, 169, 173) solid;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     
+   }
+   .boxT:hover {
+     transform: translateX(-100%) rotateY(-180deg);
+   }
+  
+   .boxT .front {
+     background-color: red;
+     background-image: url(./Imgs/Tareq.jpg);
+     background-size: cover;
+     background-position: top;
+     cursor: pointer;
+     opacity: 0.8;
+
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     font-size: 30px;
+     color: white;
+     backface-visibility: hidden;
+     
+   }
+   .boxT .back {
+     background-color: rgb(84, 93, 84);
+     transform: rotateY(180deg);
+     
+     background-size: cover;
+ 
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     font-size: 30px;
+     color: white;
+     backface-visibility: hidden;
+   }
+
+
+
+
+
+
+
+
+
+  .slider{
+    position: relative;
+    //height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+  }
+
+  .image{
+    //width:1000*1.2px;
+    //height: 600*1.2px;
+    border-radius: 10px;
+    width: 100%;
+    
+
+  }
+
+  .rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index:10;
+    cursor: pointer;
+    user-select: none;
+
+  }
+  .rightArrow:hover{
+    color: rgba(183, 197, 200, 0.993);
+    
+  }
+  
+  .leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index:10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .leftArrow:hover{
+    color: rgba(183, 197, 200, 0.993);
+    
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+
+  .slideActive {
+    opacity: 1;
+    transition-duration: 1s;
+    //transform: scale(1.08)
+  }
+
+
+
+
+  .title{
+    background-color: rgb(98, 104, 114);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    padding: 20px ;
+    margin: auto;
+  }
+
+  .articleh4title1{
+    font-weight: 800;
+    color: white;
+    padding:40px 10px;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    
+  }
+  .articleh4title2{
+    font-weight: 800;
+    color: white;
+    padding:20px 10px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    margin-top: -12px;
+  }
+  
+  
+  .articleContents{
+    h3{
+      color: black;
+    }
+    
+    background-color: #fafafa;
+    color: #657e79;
+    border: 1px solid #ddd;
+    border-left: 7px solid #506964;;
+    border-radius: 16px;
+    padding: 20px 60px ;
+    margin: 20px 0;
+  }
+  
+  a{
+    color: #657e79;
+    text-decoration: none
+  }
+
+
+  li{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .textcontent{
+    background-color: #fafafa;
+    padding: 0 0 30px 0;
+  }
+
+  h2.listItemH2title1 {
+    background-color: rgb(255, 168, 168);
+    font-size : 7vw;
+    font-weight: 800;
+    padding: 70px 0 10px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(190, 159, 159);
+    border-left: 7px solid #361010d3;
+    margin-top: -15px;
+  }
+
+  h2.listItemH2title2 {
+    background-color: rgb(255, 168, 168);
+    font-size : 7vw;
+    font-weight: 800;
+    padding: 70px 0 10px 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid rgb(190, 159, 159);
+    border-left: 7px solid #361010d3;
+    
+  }
+
+  .lession{
+    font-size: 1.3em;
+  }

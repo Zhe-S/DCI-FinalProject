@@ -1,0 +1,152 @@
+@import '../Variables/Variables.scss';
+.intro{
+   font-size:25px;
+   padding: 10px;
+   margin-bottom: 0px;
+}
+
+div .recipeImg{
+   width:100%;
+   height:350px !important;
+   border-radius: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+   object-fit: cover;
+}
+
+div .inputNutrient{
+    
+    border: 3px transparent;
+    max-width:400px;
+    border-radius: $inputBtnRadius;
+   caret-color: $inputColor;
+   color: $inputColor;
+   box-shadow: $inputBoxShadow;
+   
+   font-size: $inputfontSize;
+   padding: $inputPadding ;
+   &:focus {
+      color: $inputColor;
+      border-color: $inputBorderColor;
+      box-shadow: $inputBoxShadowFocus;
+      transition: $inputTransition;
+      border: none;
+    }
+  
+    &::placeholder {
+      color: $inputPlaceholderColor;
+     
+   }
+   
+}
+
+.formcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+input[type="image"]{
+height:60px;
+margin-left: 10px;
+opacity: 0.5;
+animation: example 2s infinite;
+}
+
+@keyframes example {
+   0%{opacity:0.2}
+    66% {opacity:0.5}
+    100%{opacity:1}
+  }
+.btnanalyze:hover{
+   opacity: 1; 
+}
+p.attention{
+padding:10px;
+}
+
+/* A */
+div.colAnalysis {
+   margin-bottom: 20px;
+  
+}
+
+div.card {
+    border-radius: 20px;
+    height:1186px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px; 
+ } 
+
+ .donout{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+}
+
+.vitamin {
+   display: flex;
+    justify-content: center;
+    height: 150px;
+    overflow: hidden;
+
+}
+
+
+div.cardTitle{
+   font-weight: bold;
+   font-size: 25px;
+   
+}
+
+@media (max-width: 300.98px) { 
+   div.card {
+      max-width: 257px;
+   }
+}
+
+@media (min-width: 301.98px) { 
+   div.card {
+      max-width: 290px;
+   }
+}
+
+@media (min-width: 359.98px) { 
+   div.card {
+      max-width: 330px;
+   }
+}
+
+@media (min-width: 383.98px) { 
+   div.card {
+      max-width: 350px;
+   }
+}
+
+@media (min-width: 409.98px) { 
+   div.card {
+      max-width: 380px;
+   }
+}
+
+@media (min-width: 427.98px) { 
+   div.card {
+      max-width: 400px;
+   }
+}
+
+
+
+.loading{
+   margin:auto;
+   height:300px;
+}
+
+
+
+

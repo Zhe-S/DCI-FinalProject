@@ -1,0 +1,339 @@
+@import '../../Variables/Variables.scss';
+
+
+div.cardArticle {
+    border-radius: 15px;
+    margin: auto;
+    overflow: hidden; 
+    width: 400px;
+    margin-bottom: 20px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+div.btnDiv {
+   width: 50%;
+   height: 60px;
+   position: relative;
+   margin-left: calc(1.5rem * 1) ;
+}
+
+button.box {
+   width: $buttonWidth;
+   bottom: 10px;
+   left: 0px;
+   border-radius: 30px;
+   position: absolute;
+   padding: 5px 15px;
+   display: inline-block;
+   text-decoration: none;
+  border: none;
+   overflow: hidden;
+   cursor: pointer;
+   font: 16px/24px Arial, sans-serif;
+   
+   transition: 
+     box-shadow 0.4s ease, 
+     background-color 0.4s ease, 
+     color 0.4s ease;
+     background-color: rgb(25, 135, 84);
+     box-shadow: 
+       0 0 2px 0 rgba(25, 135, 84, 0.1), 
+       0 0 4px 0 rgba(25, 135, 84, 0.2), 
+       0 0 6px 0 rgba(25, 135, 84, 0.3), 
+       0 0 8px 0 rgba(25, 135, 84, 0.4),
+       0 0 12px 0 rgba(25, 135, 84, 0.5), 
+       0 0 18px 0 rgba(25, 135, 84, 0.6),
+       0 0 4px 0 rgba(25, 135, 84, 0.7);
+      &:hover{
+     
+         background-color: #ea3c;
+         box-shadow: 
+           0 0 2px 0 rgba(238, 170, 51, 0.1), 
+           0 0 4px 0 rgba(238, 170, 51, 0.2), 
+           0 0 6px 0 rgba(238, 170, 51, 0.3), 
+           0 0 8px 0 rgba(238, 170, 51, 0.4),
+           0 0 12px 0 rgba(238, 170, 51, 0.5), 
+           0 0 18px 0 rgba(238, 170, 51, 0.6),
+           0 0 4px 0 rgba(238, 170, 51, 0.7);
+       }
+ }
+
+
+ 
+
+ .box span.name {
+   position: relative;
+   z-index: 1;
+   color: #fff;
+   
+ }
+ 
+ button.box i.iButton {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+   height: 200px;
+   background-color: inherit;
+   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+   transition: 
+     transform 0.4s linear, 
+     top 1s linear;
+   overflow: hidden;
+ }
+ 
+  i.iButton:before,
+ i.iButton:after {
+   content: "";
+   position: absolute;
+   width: 200%;
+   height: 200%;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -75%);
+ }
+  i.iButton:before {
+   border-radius: 46%;
+   background-color: rgba(20, 20, 20, 0.2);
+   animation: animate 5s linear infinite;
+ }
+  i.iButton:after {
+   border-radius: 40%;
+   background-color: rgba(20, 20, 20, 0.5);
+   animation: animate 10s linear infinite;
+ }
+ 
+ @keyframes animate {
+   0% {
+     transform: 
+       translate(-50%, -75%) 
+       rotate(0deg);
+   }
+   100% {
+     transform: 
+       translate(-50%, -75%) 
+       rotate(360deg);
+   }
+ }
+ 
+
+div.articleAndUserImages {
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+div.imgArticleDiv {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+img.imgArticle {
+   width: 100%;
+   height: 100%;
+   
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: cover; 
+    transition: all 0.5s linear 0s;
+    &:hover {
+        box-shadow: 0 0 10px red;
+        
+     
+    }
+}
+
+div.containerDataUser {
+   width: 150px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   margin-left: calc(50% - 75px);
+   transform: translateY(-50%);
+   top: 97%;
+   z-index: 11;
+}
+
+div.imgUserDiv {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+   border: solid 4px #FFF;
+   box-shadow: 0 0 10px #000;
+   transition: all 0.7s linear 0s;
+   &:hover {
+       
+       border-color: #fff;
+       box-shadow: 0 0 10px #ea3c;
+   }
+}
+
+img.imgUser {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+
+   &:hover {
+       transform: scale(1.1);
+       transition: all 0.7s linear 0s; 
+   }
+
+}
+
+p.textUser {
+   margin-bottom: 0;
+   margin-top: 5px;
+   font-weight: 600;
+}
+
+p.textTime {
+   color: #4d4d4d;
+   
+}
+
+
+.titleArticle {
+   height: 48px;
+   padding: 0 10px;
+   text-transform: capitalize;
+   font-weight: 600;
+   margin-top: 55px;
+   color: #000;
+   width: 100%;
+   display: block;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   transition: all 0.5s linear 0s;
+    &:hover {
+      color: red;
+    }
+}
+
+
+.textStyle {
+    /* display: block; */
+    height: 154px;
+    display: -webkit-box;
+   -webkit-line-clamp: 7;
+   -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+
+.likeDetails {
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+.readBtn{
+display: flex;
+}
+
+.readMore {
+ margin-left: 10px;
+ color: red;
+ transition: all 0.5s linear 0s;
+ &:hover {
+    color: rgba(255, 0, 0, 0.527);
+ }
+}
+
+
+ @media (max-width: 300.98px) { 
+    div.cardArticle {
+       max-width: 257px;
+    }
+ }
+
+ @media (min-width: 301.98px) { 
+    div.cardArticle {
+       max-width: 290px;
+    }
+ }
+
+ @media (min-width: 359.98px) { 
+    div.cardArticle {
+       max-width: 330px;
+    }
+ }
+
+ @media (min-width: 383.98px) { 
+    div.cardArticle {
+       max-width: 350px;
+    }
+ }
+
+ @media (min-width: 409.98px) { 
+    div.cardArticle {
+       max-width: 380px;
+    }
+ }
+
+ @media (min-width: 427.98px) { 
+    div.cardArticle {
+       max-width: 400px;
+    }
+ }
+
+div.containerH2 {
+   height: 90px;
+   position: relative;
+}
+
+div.wrapper{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%, -50%);
+   text-align:center;
+ }
+
+ div.wrapper h2 {
+   color:transparent;
+   background-clip:text;
+   -webkit-background-clip:text;
+   background-repeat:no-repeat;
+   font-size:30px;
+   font-weight:900;
+   background-position:left bottom;
+   animation:bgAnim 10s infinite ease-in-out;
+   letter-spacing:0px;
+ /*   filter: drop-shadow(0px 0px 1px rgba(0,0,0,1)); */
+   -webkit-text-stroke: 1px #ffffff;
+   paint-order: stroke fill;
+   white-space:wrap;
+   background-image: url(../../../images/bg-header.jpeg);
+ }
+
+ @media (min-width: 600px) {
+
+   div.wrapper h2 {
+      font-size:50px;
+      white-space:nowrap;
+   }
+   
+ }
+
+ @keyframes bgAnim{
+   0%{
+     background-position:right bottom;
+   }
+   50%{
+     background-position:left bottom;
+   }
+   100%{
+     background-position:right bottom;
+   }
+ }

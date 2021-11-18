@@ -1,0 +1,462 @@
+@import '../../Variables/Variables.scss';
+
+div.cardCreateArt {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f6f5f5;
+    padding: 10px;
+ 
+}
+
+textarea.inputTextArea {
+    height: 200px;
+}
+
+input.inputText {
+    margin-bottom: 20px;
+}
+
+input.inputText, textarea.inputTextArea {
+    border-radius: $inputBtnRadius;
+    caret-color: $inputColor;
+    color: $inputColor;
+    box-shadow: $inputBoxShadow;
+    font-size: $inputfontSize;
+    padding: $inputPadding ;
+    
+    
+border: 5px transparent;
+  
+    &:focus {
+        color: $inputColor;
+        border-color: $inputBorderColor;
+        box-shadow: $inputBoxShadowFocus;
+        transition: $inputTransition;
+        border: none;
+      }
+    
+      &::placeholder {
+        color: $inputPlaceholderColor;
+     }
+}
+
+
+
+div.addAndBackBtnDiv{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+div.addPhotoDiv {
+    width: 100%;
+    position: relative;
+    height: 60px;
+}
+
+button.box1 {
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    position: absolute;
+    padding: 5px 15px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    font: 16px/24px Arial, sans-serif;
+    
+    transition: 
+      box-shadow 0.4s ease, 
+      background-color 0.4s ease, 
+      color 0.4s ease;
+      background-color: rgb(25, 135, 84);
+      box-shadow: 
+        0 0 2px 0 rgba(25, 135, 84, 0.1), 
+        0 0 4px 0 rgba(25, 135, 84, 0.2), 
+        0 0 6px 0 rgba(25, 135, 84, 0.3), 
+        0 0 8px 0 rgba(25, 135, 84, 0.4),
+        0 0 12px 0 rgba(25, 135, 84, 0.5), 
+        0 0 18px 0 rgba(25, 135, 84, 0.6),
+        0 0 4px 0 rgba(25, 135, 84, 0.7);
+}
+
+.addPhotoBtn {div.containerH2 {
+    height: 90px;
+    position: relative;
+ }
+ 
+ div.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+  }
+ 
+  div.wrapper h2 {
+    color:transparent;
+    background-clip:text;
+    -webkit-background-clip:text;
+    background-repeat:no-repeat;
+    font-size:40px;
+    font-family:'Lato';
+    font-weight:900;
+    background-position:left bottom;
+    animation:bgAnim 10s infinite ease-in-out;
+    letter-spacing:0px;
+  /*   filter: drop-shadow(0px 0px 1px rgba(0,0,0,1)); */
+    -webkit-text-stroke: 1px #ffffff;
+    paint-order: stroke fill;
+    white-space:nowrap;
+    background-image: url(../../../images/bg-header.jpeg);
+  }
+ 
+  @media (min-width: 600px) {
+ 
+    div.wrapper h2 {
+       font-size:70px;
+    }
+    
+  }
+ 
+  @keyframes bgAnim{
+    0%{
+      background-position:right bottom;
+    }
+    50%{
+      background-position:left bottom;
+    }
+    100%{
+      background-position:right bottom;
+    }
+  }
+ 
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.inputFile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0; 
+    z-index: 11;
+}
+
+button.box {
+    border-radius: 30px;
+    position: absolute;
+    padding: 5px 15px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    font: 16px/24px Arial, sans-serif;
+    
+    transition: 
+      box-shadow 0.4s ease, 
+      background-color 0.4s ease, 
+      color 0.4s ease;
+      background-color: rgb(25, 135, 84);
+      box-shadow: 
+        0 0 2px 0 rgba(25, 135, 84, 0.1), 
+        0 0 4px 0 rgba(25, 135, 84, 0.2), 
+        0 0 6px 0 rgba(25, 135, 84, 0.3), 
+        0 0 8px 0 rgba(25, 135, 84, 0.4),
+        0 0 12px 0 rgba(25, 135, 84, 0.5), 
+        0 0 18px 0 rgba(25, 135, 84, 0.6),
+        0 0 4px 0 rgba(25, 135, 84, 0.7);
+ 
+  }
+
+  button.box2 {
+      top:50%;
+      transform: translateY(-50%);
+      left: 10px;
+  }
+
+  button.box3 {
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+  
+  button.box:hover{
+      
+    background-color: #ea3c;
+    box-shadow: 
+      0 0 2px 0 rgba(238, 170, 51, 0.1), 
+      0 0 4px 0 rgba(238, 170, 51, 0.2), 
+      0 0 6px 0 rgba(238, 170, 51, 0.3), 
+      0 0 8px 0 rgba(238, 170, 51, 0.4),
+      0 0 12px 0 rgba(238, 170, 51, 0.5), 
+      0 0 18px 0 rgba(238, 170, 51, 0.6),
+      0 0 4px 0 rgba(238, 170, 51, 0.7);
+  }
+  
+  .box span.name {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    
+  }
+  
+  button.box i.iButton {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 200px;
+    background-color: inherit;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 
+      transform 0.4s linear, 
+      top 1s linear;
+    overflow: hidden;
+  }
+  
+   i.iButton:before,
+  i.iButton:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+   i.iButton:before {
+    border-radius: 46%;
+    background-color: rgba(20, 20, 20, 0.2);
+    animation: animate 5s linear infinite;
+  }
+   i.iButton:after {
+    border-radius: 40%;
+    background-color: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: 
+        translate(-50%, -75%) 
+        rotate(0deg);
+    }
+    100% {
+      transform: 
+        translate(-50%, -75%) 
+        rotate(360deg);
+    }
+  }
+
+
+div.articleAndUserImages {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+div.imgArticleDiv {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; 
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+div.imageCreateDiv {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: url('../../../images/default.jpg');
+    background-position: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; 
+    /* position: relative; */
+}
+
+.imageCreate {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  /*   left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 3; */
+    
+}
+
+img.imgArticle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.closeIcon {
+    font-size: 20px;
+    color: red;
+  /*   position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5; */
+}
+
+div.containerDataUser {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-left: calc(50% - 100px);
+    transform: translateY(-50%);
+    top: 90%;
+    z-index: 11;
+}
+
+div.imgUserDiv {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 4px #FFF;
+    box-shadow: 0 0 10px #000;
+    transition: all 0.7s linear 0s; 
+    &:hover {
+        
+        border-color: #fff;
+        box-shadow: 0 0 10px #ea3c;
+    }
+}
+
+img.imgUser {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.7s linear 0s; 
+    }
+
+}
+
+p.textUser {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+p.textTime {
+    color: #4d4d4d;
+    
+}
+
+.titleArticle {
+    margin-top: 55px;
+    font-weight: 600; 
+}
+
+div.editDeleteIcon {
+   
+    padding: 0 10px !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.deleteIcon {
+    color: red; 
+}
+
+.etitIcon {
+    color: darkcyan;
+}
+
+.deleteIcon, .etitIcon {
+    font-size: 20px;
+}
+
+
+button.box1, button.box2, button.box3 {
+    width: 100px;
+    font-size: 10px;
+}
+@media (min-width: 415px) {
+    button.box1, button.box2, button.box3 {
+        width: $buttonWidth;
+        font-size: 16px;
+    }
+}
+
+div.containerH2 {
+    height: 150px;
+    position: relative;
+ }
+ 
+ div.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+  }
+ 
+  div.wrapper h2 {
+    color:transparent;
+    background-clip:text;
+    -webkit-background-clip:text;
+    background-repeat:no-repeat;
+    font-size:30px;
+    font-weight:900;
+    background-position:left bottom;
+    animation:bgAnim 10s infinite ease-in-out;
+    letter-spacing:0px;
+  /*   filter: drop-shadow(0px 0px 1px rgba(0,0,0,1)); */
+    -webkit-text-stroke: 1px #ffffff;
+    paint-order: stroke fill;
+    white-space:wrap;
+    background-image: url(../../../images/bg-header.jpeg);
+  }
+ 
+  @media (min-width: 800px) {
+    div.containerH2 {
+        height: 90px;
+    }
+    div.wrapper h2 {
+       font-size:50px;
+       white-space:nowrap;
+    }
+    
+  }
+ 
+  @keyframes bgAnim{
+    0%{
+      background-position:right bottom;
+    }
+    50%{
+      background-position:left bottom;
+    }
+    100%{
+      background-position:right bottom;
+    }
+  }
+ 

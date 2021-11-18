@@ -1,0 +1,318 @@
+@import '../../Variables/Variables.scss';
+
+.container {
+    min-height: 105vh;
+   
+    max-width: 100vw;
+    padding-top: 33px;
+    background: 
+    linear-gradient(
+        rgba(0, 7, -7, 0), 
+        rgba(0, 7, -7, 0.3)
+        ),
+    url("../../../images/test4.jpg");
+    background-size: cover;
+    background-position: bottom left;
+    margin-top: 108px;
+    margin-bottom: -20px;
+}
+
+div.appContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.boxContainer {
+    width: 280px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+ 
+    box-shadow: inset 0 0 0 300px rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.2);
+    position: relative;
+    overflow: hidden; 
+    
+    -moz-backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+}
+
+
+div.topContainer {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.8em;
+    padding-bottom: 3em;
+   
+}
+
+div.imageUserDiv {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    z-index: 3333;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+button.addFotoBtn{
+    position: relative;
+    width: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: -55px;
+    border: none;
+    border-radius: $inputBtnRadius;
+    cursor: pointer;
+    transition: all, 240ms ease-in-out;
+    font-size: 13px;
+    padding: 5px 0;
+    z-index: 6666;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.5);
+    
+    border-radius:  20px;
+    color: #fff;
+
+    &:hover {
+        background-color: #2980b9;
+    }
+}
+
+div.box {
+    width: 100%; 
+    height: 80px;  
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/80px 80px 0 0;
+    z-index: 2222;
+  }
+
+
+  img.imageUser {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+.btnFile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+  }
+
+
+div.headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.boxFormContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+div.innerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.8em;
+}
+
+form.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input.inputEmail, input.inputPassword, input.inputText {
+   width: 100%;
+   height: 30px;
+   outline: none;
+   padding: 20px 10px;
+   margin-bottom: 15px;
+   transition: all 200ms ease-in-out;
+   font-size: 12px;
+   background-color: transparent;
+   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.5);
+   border-radius: $inputBtnRadius;
+   border: 2px solid transparent;
+   caret-color: #FFF;
+   color: #FFF;
+ 
+   &::placeholder {
+       color: #FFF;
+   }
+
+   &:not(:last-of-type) {
+       border-bottom: 1.5px solid rgba(200, 200, 200, 0.4) ;
+   }
+
+   &:focus {
+       
+       outline: none;
+       border-color: #7CFC00;
+       box-shadow: 0 0 10px #7cfc00;
+       transition: all 300ms ease-in-out;
+      
+       
+   }
+}
+
+div.icons {
+    display: flex;
+    align-items: center;
+}
+
+.emailIcon,
+.passwordIcon {
+  margin-left: -25px;
+  cursor: pointer;
+  margin-top: -17px;
+
+}
+
+
+button.buttonRegister {
+   width: 100%;
+   padding: 10px;
+   color: #FFF;
+   font-size: 13px;
+   font-weight: 600px;
+   border: none;
+   border-radius: $inputBtnRadius;
+   cursor: pointer;
+   transition: all, 240ms ease-in-out;
+   background-color: #326f72;
+   filter: brightness(1.05);
+   
+
+   &:hover {
+    filter: brightness(1.55);
+   }
+}
+
+p.errorMsg{
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 5px;
+    outline: none;
+  /*   border-color: #c23616;
+    box-shadow: 0 0 10px #c23616; */
+  
+    color: rgb(97, 17, 17);
+    font-weight: 700;
+   
+
+}
+
+div.notRegister {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10px;
+}
+
+p.mutedLink {
+   font-size: 12px;
+   color: rgba(200, 200, 200, 0.8);
+   font-weight: 500;
+   text-decoration: none;
+}
+
+a.boldLink {
+   font-size: 12px;
+   color: rgba(39,174,96,1);
+   font-weight: 500;
+   text-decoration: none;
+}
+
+ div.imageUserDiv, div.box{
+
+        background: rgb(50,111,114);
+        background: linear-gradient(90deg, rgba(50,111,114,1) 0%, rgba(79,97,21,1) 86%);
+        filter: brightness(1.05);
+       
+}
+
+.emailIcon,
+.passwordIcon, a.boldLink {
+    color: #FFF;
+}
+
+@media (min-width: 700px) {
+    div.boxContainer {
+        width: 450px;  
+    }
+
+    div.topContainer {
+        height: 310px;  
+    }
+
+    div.box {
+        height: 125px;
+        border-color: #000 transparent transparent transparent;
+        border-radius:  50%/125px 125px 0 0;
+    }
+
+    div.imageUserDiv {
+        width: 130px;
+        height: 130px;
+    }
+
+    button.addFotoBtn {
+        font-size: 20px;
+        width: 150px;
+        padding: 7px 0; 
+        margin-top: -70px;
+    }
+
+    input.inputEmail, input.inputPassword, input.inputText {
+        padding: 25px 10px;
+        margin-bottom: 15px;
+        font-size: 20px; 
+    }
+    .emailIcon, .passwordIcon {
+        font-size: 25px;
+        margin-left: -38px;
+        margin-top: -17px;
+    }
+
+    button.buttonRegister {
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+
+    p.errorMsg, button.buttonLogin, p.mutedLink, a.boldLink {
+        font-size: 20px;
+    }
+
+   
+
+}
+
+
+
+
+
+
+  
